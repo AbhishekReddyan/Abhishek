@@ -12,7 +12,6 @@ const Hero = () => {
     <section className="min-h-screen flex items-center justify-center section-padding relative overflow-hidden">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-background/80" />
-      
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-primary/10 rounded-full blur-3xl animate-pulse" />
@@ -25,9 +24,9 @@ const Hero = () => {
           <div className="space-y-8">
             <div className="space-y-4">
               <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
-                <span className="gradient-text">Abhishek</span>
+                <span className="gradient-text">Abhishek Reddy AN</span>
                 <br />
-                <span className="text-foreground">Reddy AN</span>
+                {/* <span className="text-foreground"></span> */}
               </h1>
               <p className="text-xl lg:text-2xl text-muted-foreground font-medium">
                 Network Security Engineer | Cloud Operations
@@ -66,7 +65,7 @@ const Hero = () => {
                 className="hover:bg-primary/10 hover:text-primary"
                 asChild
               >
-                <a href="https://linkedin.com/in/abhishek-reddy-an" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/abhishekreddyan/" target="_blank" rel="noopener noreferrer">
                   <Linkedin className="w-5 h-5" />
                 </a>
               </Button>

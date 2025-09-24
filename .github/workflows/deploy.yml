@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # 1. Checks out your repository's code
-      - name: Checkout 🛎️
+      - name: Checkout 
         uses: actions/checkout@v4
 
       # 2. Sets up Bun (since you have a bun.lockb file)
@@ -26,21 +26,21 @@ jobs:
         uses: oven-sh/setup-bun@v1
 
       # 3. Installs dependencies
-      - name: Install dependencies 📦
+      - name: Install dependencies 
         run: bun install
 
       # 4. Builds your Vite project for production
-      - name: Build project 🏗️
+      - name: Build project 
         run: bun run build
 
       # 5. Uploads the build artifact for deployment
-      - name: Upload artifact 🚀
+      - name: Upload artifact 
         uses: actions/upload-pages-artifact@v3
         with:
           # This should match the output directory of your build command
           path: ./dist
 
       # 6. Deploys the artifact to GitHub Pages
-      - name: Deploy to GitHub Pages 🚀
+      - name: Deploy to GitHub Pages 
         id: deployment
         uses: actions/deploy-pages@v4

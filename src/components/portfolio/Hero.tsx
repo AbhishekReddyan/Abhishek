@@ -24,7 +24,7 @@ const Hero = () => {
           <div className="space-y-8">
             <div className="space-y-4">
               <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
-                <span className="gradient-text">Abhishek Reddy AN</span>
+                <span className="gradient-text">Abhishek Reddy A N</span>
                 <br />
                 {/* <span className="text-foreground"></span> */}
               </h1>
